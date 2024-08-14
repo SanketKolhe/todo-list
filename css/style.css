@@ -6,7 +6,7 @@
 }
 
 body {
-    background: rgb(232, 238, 238);
+    background: #e8eeee;
 }
 
 .container {
@@ -45,15 +45,20 @@ h1 {
     margin-left: 5px;
     font-weight: 700px;
     cursor: pointer;
+    transition: background 0.2s ease;
 }
 
+.todo-input input[type=button]:hover {
+    background: #349c34;
+
+}
 ul {
     width: 100%;
     max-width: 450px;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
 ul li {
@@ -64,4 +69,35 @@ ul li {
     border-radius: 4px;
     border: 0.2px solid #a19f9f;
     padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.2s ease;
+}
+
+ul li:hover {
+    background-color: #cbcaca;
+}
+
+ul li p {
+    flex-grow: 1;
+    padding: px;
+}
+
+.action-btn {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: none;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.edit-btn {
+    color: #2cc22c;
+}
+
+.delete-btn {
+    color: rgb(226, 35, 35);
 }
